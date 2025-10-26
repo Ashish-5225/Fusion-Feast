@@ -5,9 +5,8 @@ document.querySelector("form").addEventListener("submit", function (e) {
   const password = document.getElementById("password").value;
 
   // Example: simple validation (you can change these values)
-  if (username === "admin" && password === "12345") {
-    alert("Login successful!");
-    window.location.href = "PS1.html"; // ✅ redirect to another page
+  if (username === "Ashish" && password === "12345") {
+    window.location.href = "../projects/Fusion Feast.html"; // ✅ redirect to another page
   } else {
     alert("Invalid username or password!");
   }
