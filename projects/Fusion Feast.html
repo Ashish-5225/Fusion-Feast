@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bites - Responsive Restaurant Menu (KL 4)</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Fusion Feast</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- CART SECTION -->
+    <div class="cart-container">
+      <div class="cart-icon" id="cart-btn">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      <div class="cart-dropdown" id="cart-dropdown">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: ₹0</p>
+        <a href="../projects/checkout.html" id="checkout-btn" class="btn">Checkout</a>
+
+      </div>
+    </div>
+  </header>
+  <!-- ===== CHATBOT WIDGET ===== -->
+<div id="chatbot-container">
+  <div id="chatbot-header">💬 Chat with us</div>
+  <div id="chatbot-body"></div>
+  <div id="chatbot-footer">
+    <input type="text" id="chatbot-input" placeholder="Type your message..." />
+    <button id="chatbot-send">Send</button>
+  </div>
+</div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Fusion Feast</h2>
+      <p>Fresh, flavorful, and made with love.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="../image/pizza.avif" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Classic cheese pizza with a crispy crust.</p>
+        <span class="price" data-price="299">₹299</span><br>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../image/burger.jpeg" alt="Burger">
+        <h3>Veggie Burger</h3>
+        <p>Loaded with fresh veggies and special sauce.</p>
+        <span class="price" data-price="249">₹249</span><br>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../image/pasta.jpeg" alt="Pasta">
+        <h3>White Sauce Pasta</h3>
+        <p>Creamy pasta with Italian herbs.</p>
+        <span class="price" data-price="279">₹279</span><br>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../image/chocholava.jpeg" alt="Dessert">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Soft cake filled with molten chocolate.</p>
+        <span class="price" data-price="199">₹199</span><br>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At <b>Fusion Feast</b>, we believe in serving happiness with every bite.
+      Our ingredients are fresh, our chefs are passionate, and our flavors are unforgettable.
+    </p>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91 98765 43210</p>
+    <p>📧 info@deliciousbites.com</p>
+    <p>📍 Delhi, India</p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Fusion Feast</p>
+  </footer>
+  <script src="../js/chatbot.js"></script>
+
+  <script src="../Js/Fusion Feast .js"></script>
+</body>
+</html>

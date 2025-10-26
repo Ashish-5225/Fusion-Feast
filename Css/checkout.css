@@ -1,0 +1,175 @@
+/* =============================
+   CHECKOUT PAGE - MODERN GREEN TEXTURE
+============================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #d4edda; /* light green base */
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.08) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #28a745, #1e7e34); /* green gradient */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header .btn {
+  background: white;
+  color: #1e7e34;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+header .btn:hover {
+  background: #e6f2ea;
+  transform: translateY(-2px);
+}
+
+/* ===== CHECKOUT SECTION ===== */
+.checkout {
+  max-width: 550px;
+  margin: 3rem auto;
+  background: #ffffffcc; /* slightly transparent white */
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.checkout:hover {
+  transform: translateY(-3px);
+}
+
+.checkout h2 {
+  color: #28a745;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Cart Items List */
+#checkout-cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background  0.2s ease;
+}
+
+.checkout-item:hover {
+  background: #e6f2ea;
+  border-radius: 8px;
+}
+
+/* Total Amount */
+#checkout-total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #28a745;
+}
+
+/* Place Order Button */
+#place-order-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+#place-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e6f2ea;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .checkout {
+    margin: 2rem 1rem;
+    padding: 2rem;
+  }
+
+  #place-order-btn {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}
